@@ -1,0 +1,44 @@
+<nav>
+  <app-navbar *ngFor= "let page of pages" [page]="page.page" [name]="page.name"></app-navbar>
+</nav>
+<div class="main">
+
+    <h1>Reservation Details</h1>
+
+    <table>
+      <th>First Name:</th>
+      <td>{{fname}}</td>
+      <tr>
+      <th>Last Name:</th>
+      <td>{{lname}}</td>
+      </tr>
+      <th>Age:</th>
+      <td>{{age}}</td>
+      <tr>
+      <th>Email:</th>
+      <td>{{phone}}</td>
+      </tr>
+      <tr>
+      <th>City</th>
+      <td>{{city}}</td>
+      </tr>
+      <th>Check In:</th>
+      <td>{{datein}}</td>
+      <tr>
+      <th>Check Out:</th>
+      <td>{{dateout}}</td>
+      </tr>
+      <tr>
+          <th>Price:</th>
+          <td><strong>R 800.00</strong></td>
+          </tr>
+    </table>
+
+</div>
+
+
+
+
+
+
+

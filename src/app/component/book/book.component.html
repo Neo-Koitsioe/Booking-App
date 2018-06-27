@@ -1,0 +1,46 @@
+<nav>
+  <app-navbar *ngFor= "let page of pages" [page]="page.page" [name]="page.name"></app-navbar>
+</nav>
+
+<div class="main">
+
+ 
+  <form>
+  
+  <h1>Enter Details</h1><br><br>
+  
+  <label>First Name:</label>
+  <input type="text" name="fname" [(ngModel)] = "fname" required><br><br>
+  <label>Last Name:</label>
+  <input type="text" name="lname" [(ngModel)] = "lname" required><br><br>
+  <label>Age:</label>
+  <input type="number" name="age" [(ngModel)] = "age" required><br><br>
+
+  <label>Email:</label>
+  <input type="email" name="email"  [(ngModel)] = "email" required><br><br>
+  
+  <label>City:</label>
+  
+  <select name="city" [(ngModel)] = "city" required>
+      <option selected="selected">Select Your City</option>
+      <option value="Johannesburg">Johannesburg</option>
+      <option value="Pretoria">Pretoria</option>
+      <option value="Cape Town">Cape Town</option>
+      <option value="Durban">Durban</option>
+      <option value="Bloemfontein">Bloemfontein</option>
+      <option value="Mahikeng">Mahikeng</option>
+      <option value="Kimberly">Kimberly</option>
+      <option value="Nelspruit">Nelspruit</option>
+      <option value="Polokwane">Polokwane</option>
+    </select><br><br>  
+  
+  <label>Check-in</label>
+  <input type="date" name="datein" [(ngModel)] = "datein" required><br><br>
+  
+  <label>Check-out</label>
+  <input type="date" name="dateout" [(ngModel)] = "dateout" required><br><br>
+  
+  <button type="button" (click)= "booking()" value="submit">Book</button>
+  
+  </form>
+  </div>
